@@ -20,7 +20,7 @@ class Post(models.Model):
         default=Status.DRAFT
     )
     author = models.ForeignKey(
-        settings=AUTH_USER_MODEL,
+        settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         related_name='blog_posts'
     )
